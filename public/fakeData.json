@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Maldives",
+    "img": "https://i.ibb.co/MnMBKtC/Aerial-view-made-with-drone-of-Canareef-Resort-Maldives-Addu-City-Herathera-island-Addu-atoll-former.jpg",
+    "description": "Lying in the South Male Atoll, the serene Biyadhoo Island is managed and owned by India's reputed Taj Group. Spread across an area of around 10 acres, this photogenic island is known for its rich vegetation that includes home-grown coconut, cabbage, tomatoes, banana, and mango plantations.",
+    "price": 20000
+  },
+  {
+    "title": "Paris",
+    "img": "https://i.ibb.co/KydGYJ0/switz.jpg",
+    "description": "The French capital is one of the most romantic cities in Europe and one of the world's most visited cities. There are endless reasons to visit Paris repeatedly: it is a beautiful and cultural city, very walkable, with great sights, and it has been a source of inspiration for many writers, artists, and filmmakers.",
+    "price": 2000000
+  },
+  {
+    "title": "Bali",
+    "img": "https://i.ibb.co/DMRHckt/Beautiful-Panorama-of-Ulun-Danu-Bratan-Hindu-Temple-under-blue-summer-sky-at-Lake-Bratan-Pura-Ulun-D.jpg",
+    "description": "Bali is pretty safe to visit for all sorts of travellers. The island is so well-trodden and inhabited by such friendly and helpful people, that it's one of the safest places in Southeast Asia to travel around",
+    "price": 2500000
+  },
+  {
+    "title": "Hawaii",
+    "img": "https://i.ibb.co/ZcrrdpF/Amazing-sunset-and-palms-on-the-beach-Beautiful-nature-of-Hawaii-USA.jpg",
+    "description": "A tourism economy encourages foreign investment, which drives up inflation, and thus the cost of living. Fact: The very high cost of living in Hawai'i has encouraged the Native people to leave their island home in search of better economic conditions on the American continent.",
+    "price": 2500000
+  },
+  {
+    "title": "Switzerland",
+    "img": "https://i.ibb.co/x2x6Rvs/paris-2.jpg",
+    "description": "The amazing natural beauty of the majestic Alps, the placid lakes, quaint villages, cosmopolitan cities and towering castles – that's just some of what Switzerland has to offer. Add to it some shopping, wine tasting, delectable chocolates and cheeses and it gets even better.",
+    "price": 4500000
+  },
+  {
+    "title": "Kashmir",
+    "img": "https://i.ibb.co/g3D1Vs4/Leh-in-Ladakh-the-far-Norther-part-of-India-Temple.jpg",
+    "description": "Some major tourist attractions in Jammu and Kashmir are Srinagar, the Mughal Gardens, Gulmarg, Pahalgam, Patnitop and Jammu. Every year, thousands of Hindu pilgrims.",
+    "price": 1000000
+  }
+]
