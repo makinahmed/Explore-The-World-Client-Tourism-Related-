@@ -19,11 +19,14 @@ const ManageAllUsers = () => {
 
     // console.log(orders);
     const handleUserDelete = email => {
-        axios.delete(`https://shielded-bayou-33082.herokuapp.com/manageallusers?email=${email}`)
-            .then(res => {
-                const currentUser = orders.filter(order => order.email != email)
-                setOrders(currentUser)
-            })
+        const isConfirm = window.confirm("Are you sure you want to cancel Order ?");
+        if (isConfirm) {
+            axios.delete(`https://shielded-bayou-33082.herokuapp.com/manageallusers?email=${email}`)
+                .then(res => {
+                    const currentUser = orders.filter(order => order.email != email)
+                    setOrders(currentUser)
+                })
+        }return
     }
 
 
