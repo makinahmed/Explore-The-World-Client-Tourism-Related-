@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Spinner } from 'react-bootstrap';
 import Offer from './Offer';
 
 const Offers = () => {
@@ -12,14 +12,20 @@ const Offers = () => {
             .then(data => setOffers(data))
     }, [])
     return (
-        <Container className="mt-5 text-center">
-            <h1 className="my-5">Available Tour</h1>
-            <Row className="g-5 mx-auto">
-                {
-                    offers.map(offer => <Offer key={offer.title} offer={offer}></Offer>)
-                }
-            </Row>
-        </Container>
+        <>{
+            offers.length ? <Container className="mt-5 text-center">
+                <h1 className="my-5">Available Tour</h1>
+                <Row className="g-5 mx-auto">
+                    {
+                        offers.map(offer => <Offer key={offer.title} offer={offer}></Offer>)
+                    }
+                </Row>
+            </Container> : <>
+                <Spinner animation="border" variant="info" />
+
+            </>
+        }</>
+
     );
 };
 
