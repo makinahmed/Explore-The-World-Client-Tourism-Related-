@@ -1,9 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { Col, Container, ListGroupItem, Row, Spinner } from 'react-bootstrap';
+import { Col, Container, Row, Spinner } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-import { useParams, useLocation, useHistory } from 'react-router';
+import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import useAuth from '../Hooks/useAuth';
 const axios = require('axios');
@@ -13,28 +13,26 @@ const PlaceOrder = () => {
     const { register, handleSubmit, reset } = useForm();
     const [currentTour, setCurrentTour] = useState();
     const { user } = useAuth()
-    const location = useLocation()
-    const history = useHistory()
-    // const redirect_uri  = location.state?.from || '/placeorder'
+  
 
     useEffect(() => {
         fetch(`https://shielded-bayou-33082.herokuapp.com/offer/${title}`)
             .then(res => res.json())
             .then(data => {
                 setCurrentTour(data)
-                // history.push(redirect_uri)
             })
     }, [title])
     const onSubmit = e => {
-        // console.log(e);
         const name = user.displayName
         const email = e?.email;
         const date = e?.date;
         const address = e?.address;
         currentTour.date = date;
         currentTour.address = address;
+        currentTour.status = "Pending";
         currentTour.email = email;
         currentTour.name = name;
+      
 
         axios.post('https://shielded-bayou-33082.herokuapp.com/placeorder', currentTour)
             .then(res => console.log(res))

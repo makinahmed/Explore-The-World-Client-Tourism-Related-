@@ -2,6 +2,7 @@ import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
 import { useRef } from 'react';
+import { useHistory, useLocation } from 'react-router';
 
 const Addservice = () => {
 
@@ -9,6 +10,7 @@ const Addservice = () => {
     const [description, setDescription] = useState('')
     const [image, setImage] = useState('')
     const [price, setPrice] = useState(0)
+
     const handleTitle = e => {
         setTitle(e.target.value)
 
@@ -24,13 +26,13 @@ const Addservice = () => {
     }
 
     const handleSubmit = e => {
-        
+
         const service = { title: title, description: description, price: price, img: image }
         axios.post('https://shielded-bayou-33082.herokuapp.com/addservice', service)
             .then(res => console.log(res))
 
         // setTitle('')
-       
+
         // setImage('')
         // setPrice(0)
         // setDescription('')

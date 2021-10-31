@@ -3,11 +3,12 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 const Banner = () => {
     return (
-        <Container className="fluid mt-5">
-            <Row className=" align-items-center">
-                <Col lg={6} sm={12}>
-                    <div>
-                        <img className="w-100 border" style={{ borderRadius: '10px' }} src="https://i.ibb.co/yqWdJg8/joshua-earle-87-Jy-Mb9-Zf-U-unsplash.jpg" alt="" />
+        <Container fluid className="mb-5" >
+            <Row className="align-items-center">
+                <Col lg={8} sm={12} className="mx-auto">
+
+                    <div style={{width: '100%'}}>
+                        <img  style={{ width: '100%', height: '100vh' }} src="https://i.ibb.co/yqWdJg8/joshua-earle-87-Jy-Mb9-Zf-U-unsplash.jpg" alt="" />
                     </div>
                 </Col>
                 <Col className="mx-auto px-3" lg={4} sm={12}>
