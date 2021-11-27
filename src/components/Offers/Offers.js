@@ -12,7 +12,7 @@ const Offers = () => {
             .then(data => setOffers(data))
     }, [])
     return (
-        <>{
+        <div>{
             offers.length ? <Container className="mt-5 text-center">
                 <h1 className="my-5">Available Tour</h1>
                 <Row className="g-5 mx-auto">
@@ -24,7 +24,7 @@ const Offers = () => {
                 <Spinner animation="border" variant="info" />
 
             </>
-        }</>
+        }</div>
 
     );
 };

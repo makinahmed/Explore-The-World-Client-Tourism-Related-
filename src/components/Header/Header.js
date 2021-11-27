@@ -8,7 +8,7 @@ const Header = () => {
     // console.log(user)
     return (
         <div>
-            <Navbar bg="dark" expand="lg" variant="dark" >
+            <Navbar bg="dark" fixed="top"  expand="lg" variant="dark" >
                 <Container >
                     <Navbar.Brand as={Link} to="/">Explore The World</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
