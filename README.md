@@ -33,10 +33,7 @@ In the project:
 
 # Necessary Links :
 
-* Client Side Github Link : https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-makinahmed
 
-
-* Server Side Github Link : https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-makinahmed
 
 * Live Site Link : https://explore-world-3c672.web.app/
 
